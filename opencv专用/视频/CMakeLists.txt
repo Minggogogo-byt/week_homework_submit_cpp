@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(armor_project)
+find_package(Opencv REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(task1 task1.cpp)
+target_link_libraries(task1 ${OpenCV_LIBS})
+add_executable(task2 task2.cpp)
+target_link_libraries(task12 ${OpenCV_LIBS})
